@@ -68,14 +68,6 @@ const Footer = () => {
         >
           <Typography>© Fareed Kamal 2023</Typography>
           <Stack direction={'row'} spacing={5} alignItems={'center'}>
-            {/* <Link target='_blank' to={'https://upwork.com'}>
-              <img
-                style={{
-                  height: '35px',
-                }}
-                src='src/assets/logos/facebook.png'
-              />
-            </Link> */}
             <Link target='_blank' to={'https://linkedin.com/in/fareedkamal'}>
               <img
                 style={{
