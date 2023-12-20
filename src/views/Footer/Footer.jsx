@@ -27,7 +27,10 @@ const Footer = () => {
             </Typography>
           </Stack>
           <Stack color={'white'} spacing={4} fontSize={styles.fontSize.md}>
-            <Link to='/work' style={{ textDecoration: 'none', color: 'white' }}>
+            <Link
+              to='/me/work'
+              style={{ textDecoration: 'none', color: 'white' }}
+            >
               <div className='hover-wrapper'>
                 <Typography
                   className='hover-style'
@@ -99,7 +102,7 @@ const Footer = () => {
             </Link> */}
             <Link
               target='_blank'
-              to={'https://www.upwork.com/freelancers/~0156dab00df761cb68'}
+              to={'https://www.upwork.com/freelancers/fareedkamal'}
             >
               <img
                 style={{
