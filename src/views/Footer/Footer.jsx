@@ -94,7 +94,7 @@ const Footer = () => {
             </Link> */}
             <Link
               target='_blank'
-              to={'https://www.upwork.com/freelancers/fareedkamal'}
+              to={'https://www.upwork.com/freelancers/~0156dab00df761cb68'}
             >
               <img
                 style={{

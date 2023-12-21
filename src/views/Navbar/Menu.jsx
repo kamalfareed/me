@@ -78,7 +78,7 @@ const Menu = () => {
             /> */}
             <Link
               target='_blank'
-              to={'https://www.upwork.com/freelancers/fareedkamal'}
+              to={'https://www.upwork.com/freelancers/~0156dab00df761cb68'}
             >
               <Box component='img' sx={imgStyle} src={upworkLogo} />
             </Link>
