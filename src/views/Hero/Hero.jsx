@@ -3,10 +3,7 @@ import Section from '../../components/shared/Section';
 import { styles } from '../../style/styles';
 import { useInView } from 'react-intersection-observer';
 import profileImg from 'src/assets/profile.png';
-import heroGraphic2 from 'src/assets/heroGraphic2.png';
-import element2 from 'src/assets/element2.png';
 import './styles.css';
-import dottedGrid from 'src/assets/new-graphics/dotted-grid.png';
 
 const Hero = () => {
   const [ref, inView] = useInView({
@@ -37,8 +34,8 @@ const Hero = () => {
             justifyContent: 'space-between',
           }}
         >
-          <div className={`square box ${inView ? 'animate' : ''}`} />
-          <div className={`circle box ${inView ? 'animate' : ''}`} />
+          {/* <div className={`square box ${inView ? 'animate' : ''}`} />
+          <div className={`circle box ${inView ? 'animate' : ''}`} /> */}
           <div className='blur-object blur-object-1' />
           <div className='blur-object blur-object-2' />
 
@@ -85,7 +82,7 @@ const Hero = () => {
               fontWeight={900}
               fontSize={styles.fontSize.lg}
             >
-              Software Engineer / Full Stack Dev.
+              {`<`} Software Engineer <br /> / Full Stack Dev {`/>`};
             </Typography>
             <Typography color={'black'} fontSize={{ lg: 20, xs: 10 }}>
               I like to craft solid and scalable software products with great

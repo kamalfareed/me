@@ -4,7 +4,7 @@
   position: absolute;
   top: -22em;
   left: -19em;
-  border: 1px solid #ff7b7b;
+  border: 1px solid #ff743d;
 }
 
 .circle {
@@ -20,7 +20,7 @@
 
 .text-1 {
   font-size: 72px;
-  background: -webkit-linear-gradient(#3150ff, #ff3d3d);
+  background: -webkit-linear-gradient(#3150ff, #ff743d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -34,7 +34,7 @@
   filter: blur(80px);
 }
 .blur-object-1 {
-  background-color: #ff3d3d;
+  background-color: #ff743d;
   left: -23em;
   top: 26em;
 }
