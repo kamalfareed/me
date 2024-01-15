@@ -23,7 +23,8 @@ const Hero = () => {
         overflowX: 'hidden',
         overflowY: 'hidden',
         position: 'relative',
-        backgroundColor: 'white',
+        background:
+          'radial-gradient(circle, rgba(251,172,63,1) 0%, rgba(252,70,107,1) 100%)',
       }}
     >
       <Section>
@@ -37,8 +38,8 @@ const Hero = () => {
             justifyContent: 'space-between',
           }}
         >
-          <div className={`square box ${inView ? 'animate' : ''}`} />
-          <div className={`circle box ${inView ? 'animate' : ''}`} />
+          {/* <div className={`square box ${inView ? 'animate' : ''}`} />
+          <div className={`circle box ${inView ? 'animate' : ''}`} /> */}
           <div className='blur-object blur-object-1' />
           <div className='blur-object blur-object-2' />
 
@@ -80,14 +81,13 @@ const Hero = () => {
             width={{ lg: '50%', xs: '100%' }}
           >
             <Typography
-              color={'black'}
-              className='text-1'
+              color={'white'}
               fontWeight={900}
               fontSize={styles.fontSize.lg}
             >
               Software Engineer / Full Stack Dev.
             </Typography>
-            <Typography color={'black'} fontSize={{ lg: 20, xs: 10 }}>
+            <Typography color={'white'} fontSize={{ lg: 20, xs: 10 }}>
               I like to craft solid and scalable software products with great
               user experiences.
             </Typography>
@@ -97,7 +97,7 @@ const Hero = () => {
             sx={{
               height: { lg: '400px', xs: '200px' },
               width: { lg: '400px', xs: '200px' },
-              border: '1px solid #3150ff',
+              border: '1px solid white',
               zIndex: 1,
               mt: { xs: 10 },
             }}
@@ -110,7 +110,6 @@ const Hero = () => {
               sx={{
                 m: '-20px',
                 objectFit: 'contain',
-                border: '1px solid #3150ff',
               }}
             />
           </Box>
