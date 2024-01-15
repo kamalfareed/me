@@ -94,7 +94,7 @@ const Hero = () => {
             sx={{
               height: { lg: '400px', xs: '200px' },
               width: { lg: '400px', xs: '200px' },
-              border: '1px solid #3150ff',
+              border: '1px solid #ff743d',
               zIndex: 1,
               mt: { xs: 10 },
             }}
