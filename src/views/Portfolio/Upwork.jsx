@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import upworkReview from 'src/assets/upwork_review.png';
 import ecommerce from 'src/assets/work/ecommerce.png';
 import diana from 'src/assets/work/diana.png';
+import tjuv from 'src/assets/work/4.png';
 
 const Upwork = () => {
   const [ref, inView] = useInView({
@@ -30,7 +31,7 @@ const Upwork = () => {
           </Typography>
           <Link
             target='_blank'
-            to={'https://www.upwork.com/freelancers/~0156dab00df761cb68'}
+            to={'https://www.upwork.com/freelancers/fareedkamal'}
           >
             <Box
               component={'img'}
@@ -53,6 +54,38 @@ const Upwork = () => {
               flexFlow: 'wrap',
             }}
           >
+            <Box
+              sx={{
+                overflow: 'hidden',
+                boxShadow: '0px 10px 43px -40px',
+                height: '300px',
+                width: '400px',
+                display: 'flex',
+                flexDirection: 'column',
+                backgroundColor: 'white',
+                cursor: 'pointer',
+              }}
+            >
+              <Box
+                component={'img'}
+                sx={{
+                  height: '70%',
+                  width: '100%',
+                  objectFit: 'cover',
+                  objectPosition: 'top',
+                }}
+                src={tjuv}
+              />
+              <Typography
+                sx={{
+                  p: 3,
+                }}
+                fontSize={styles.fontSize.md}
+                fontWeight={800}
+              >
+                SaaS Newsletter Platform
+              </Typography>
+            </Box>
             <Box
               sx={{
                 overflow: 'hidden',

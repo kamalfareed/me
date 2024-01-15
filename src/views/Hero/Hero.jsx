@@ -20,10 +20,10 @@ const Hero = () => {
         width: '100%',
         overflow: 'hidden',
         position: 'relative',
-        backgroundColor: styles.pallette[2],
+        background: 'linear-gradient(65deg, #1300ff 0%, #ff6334f5 100%)',
       }}
     >
-      <Box
+      {/* <Box
         sx={{
           backgroundColor: styles.secondaryPallete[0],
           height: '100%',
@@ -32,7 +32,7 @@ const Hero = () => {
           right: 0,
           top: 0,
         }}
-      />
+      /> */}
       <Section>
         <Stack
           sx={{
@@ -86,7 +86,8 @@ const Hero = () => {
               fontWeight={900}
               fontSize={styles.fontSize.lg}
             >
-              Software Engineer / Full Stack Dev.
+              {'<'} Software Engineer
+              <br />/ Full Stack Dev {'/>;'}
             </Typography>
             <Typography color={'white'} fontSize={{ lg: 20, xs: 10 }}>
               I like to craft solid and scalable software products with great
@@ -111,7 +112,6 @@ const Hero = () => {
               sx={{
                 m: '-20px',
                 objectFit: 'contain',
-                filter: 'grayscale(1)',
               }}
             />
           </Box>
