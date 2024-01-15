@@ -23,7 +23,11 @@
 }
 
 .menu-button {
+<<<<<<< HEAD
   background-color: #ff6334f5;
+=======
+  background-color: #ff743d;
+>>>>>>> c0c2520102448ae36ef099897b6a38deb8ea1407
   height: 60px;
   width: 60px;
   border-radius: 100%;
@@ -43,14 +47,22 @@
 }
 
 .line-1-animate {
+<<<<<<< HEAD
   background-color: #ff6334f5;
+=======
+  background-color: #ff743d;
+>>>>>>> c0c2520102448ae36ef099897b6a38deb8ea1407
   transform: rotate(45deg) translate(5px, 6px);
   transition: all ease 0.3s;
   width: 60%;
 }
 
 .line-2-animate {
+<<<<<<< HEAD
   background-color: #ff6334f5;
+=======
+  background-color: #ff743d;
+>>>>>>> c0c2520102448ae36ef099897b6a38deb8ea1407
   transform: rotate(-45deg) translate(3px, -3px);
   transition: all ease 0.3s;
   width: 60%;

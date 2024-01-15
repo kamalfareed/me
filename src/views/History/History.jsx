@@ -16,7 +16,11 @@ const History = () => {
       ref={ref}
       sx={{
         width: '100%',
+<<<<<<< HEAD
         bgcolor: styles.secondaryPallete[0],
+=======
+        bgcolor: '#ff743d',
+>>>>>>> c0c2520102448ae36ef099897b6a38deb8ea1407
         overflow: 'hidden',
       }}
     >
