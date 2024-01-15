@@ -3,7 +3,8 @@ import Section from '../../components/shared/Section';
 import { styles } from '../../style/styles';
 import { useInView } from 'react-intersection-observer';
 import profileImg from 'src/assets/profile.png';
-import './styles.css';
+import heroGraphic2 from 'src/assets/heroGraphic2.png';
+import element2 from 'src/assets/element2.png';
 
 const Hero = () => {
   const [ref, inView] = useInView({
@@ -17,8 +18,7 @@ const Hero = () => {
       className='section'
       sx={{
         width: '100%',
-        overflowX: 'hidden',
-        overflowY: 'hidden',
+        overflow: 'hidden',
         position: 'relative',
         background: 'linear-gradient(65deg, #1300ff 0%, #ff6334f5 100%)',
       }}
@@ -44,12 +44,7 @@ const Hero = () => {
             justifyContent: 'space-between',
           }}
         >
-          {/* <div className={`square box ${inView ? 'animate' : ''}`} />
-          <div className={`circle box ${inView ? 'animate' : ''}`} /> */}
-          <div className='blur-object blur-object-1' />
-          <div className='blur-object blur-object-2' />
-
-          {/* <Box
+          <Box
             className={`box ${inView ? 'animate' : ''}`}
             component={'img'}
             sx={{
@@ -80,22 +75,21 @@ const Hero = () => {
               transform: 'rotate(-90deg)',
             }}
             src={element2}
-          /> */}
+          />
 
           <Stack
             className={`box ${inView ? 'animate' : ''}`}
             width={{ lg: '50%', xs: '100%' }}
           >
             <Typography
-              color={'black'}
-              className='text-1'
+              color={'white'}
               fontWeight={900}
               fontSize={styles.fontSize.lg}
             >
               {'<'} Software Engineer
               <br />/ Full Stack Dev {'/>;'}
             </Typography>
-            <Typography color={'black'} fontSize={{ lg: 20, xs: 10 }}>
+            <Typography color={'white'} fontSize={{ lg: 20, xs: 10 }}>
               I like to craft solid and scalable software products with great
               user experiences.
             </Typography>
@@ -105,7 +99,7 @@ const Hero = () => {
             sx={{
               height: { lg: '400px', xs: '200px' },
               width: { lg: '400px', xs: '200px' },
-              border: '1px solid #ff743d',
+              border: '1px solid white',
               zIndex: 1,
               mt: { xs: 10 },
             }}
