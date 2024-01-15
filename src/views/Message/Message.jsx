@@ -97,7 +97,7 @@ const Message = () => {
                 textDecoration: 'none',
               }}
               target='_blank'
-              to={'https://www.upwork.com/freelancers/~0156dab00df761cb68'}
+              to={'https://www.upwork.com/freelancers/fareedkamal'}
             >
               <StyledButton title='SHOOT' />
             </Link>

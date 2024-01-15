@@ -11,7 +11,8 @@ const Footer = () => {
       sx={{
         width: '100%',
         py: { lg: 10, xs: 4 },
-        backgroundColor: styles.pallette[2],
+        background:
+          'radial-gradient(circle, rgba(255,61,61,1) 0%, rgba(49,80,255,1) 100%)',
       }}
     >
       <StyledFooter>
@@ -94,7 +95,7 @@ const Footer = () => {
             </Link> */}
             <Link
               target='_blank'
-              to={'https://www.upwork.com/freelancers/~0156dab00df761cb68'}
+              to={'https://www.upwork.com/freelancers/fareedkamal'}
             >
               <img
                 style={{

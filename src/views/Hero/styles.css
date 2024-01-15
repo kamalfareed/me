@@ -1,0 +1,77 @@
+.square {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: -22em;
+  left: -19em;
+  border: 1px solid #ff7b7b;
+}
+
+.circle {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  position: absolute;
+  right: -14em;
+  left: -9em;
+  top: -19em;
+  border: 1px solid #3150ff;
+}
+
+.text-1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#3150ff, #ff3d3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blur-object {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 0;
+  filter: blur(80px);
+}
+.blur-object-1 {
+  background-color: #ff3d3d;
+  left: -23em;
+  top: 26em;
+}
+.blur-object-2 {
+  background-color: #3150ff;
+  left: -29em;
+  top: 29em;
+}
+
+@media (max-width: 1200px) {
+  .square {
+    left: unset;
+    right: -15em;
+    top: -12em;
+    height: 300px;
+    width: 300px;
+  }
+  .circle {
+    left: unset;
+    right: -7em;
+    top: -15em;
+    height: 300px;
+    width: 300px;
+  }
+
+  .blur-object {
+    height: 100px;
+    width: 100px;
+    filter: blur(50px);
+  }
+
+  .blur-object-1 {
+    left: 0em;
+    top: 15em;
+  }
+  .blur-object-2 {
+    left: 5em;
+    top: 15em;
+  }
+}

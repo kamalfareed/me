@@ -16,7 +16,8 @@ const History = () => {
       ref={ref}
       sx={{
         width: '100%',
-        bgcolor: styles.pallette[2],
+        background:
+          'radial-gradient(circle, rgba(255,61,61,1) 0%, rgba(49,80,255,1) 100%)',
         overflow: 'hidden',
       }}
     >
