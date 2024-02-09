@@ -1,307 +1,152 @@
 import { Box, Divider, Grid, Stack, Typography } from '@mui/material';
 import Section from '../../components/shared/Section';
 import { styles } from '../../style/styles';
-import { resumeData } from './resumeData';
-import { useEffect } from 'react';
-import Navbar from '../Navbar/Navbar';
 
 const Resume = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  });
-
   return (
-    <>
-      <Navbar />
-      <Box
+    <Section
+      sx={{
+        bgcolor: styles.newPallette[0],
+        py: 10,
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 5,
+      }}
+    >
+      <Stack
+        direction={{ md: 'row', xs: 'column' }}
         sx={{
-          width: '100%',
-          my: '5em',
+          bgcolor: '#202127',
+          color: 'white',
+          p: 5,
+          borderRadius: 4,
+          alignItems: { md: 'center', xs: 'start' },
+        }}
+        spacing={5}
+      >
+        <Stack flex={0.8}>
+          <Typography fontWeight={500} fontSize={styles.staticfontSize.xlg}>
+            Fareed Kamal
+          </Typography>
+          <Typography
+            fontWeight={500}
+            mb={2}
+            color={styles.newPallette[2]}
+            fontSize={styles.staticfontSize.md}
+          >
+            Full Stack Dev / Software Engineer
+          </Typography>
+          <Typography
+            fontWeight={500}
+            color={styles.newPallette[2]}
+            fontSize={styles.staticfontSize.md}
+          >
+            Highly skilled Full Stack Developer, specializing in creating
+            cutting-edge web applications. Adept at utilizing modern frameworks
+            and languages to deliver innovative solutions that enhance user
+            experiences.
+          </Typography>
+        </Stack>
+        <Stack spacing={2}>
+          <Typography fontWeight={500} fontSize={styles.staticfontSize.md}>
+            Lahore, Pakistan
+          </Typography>
+          <Typography fontWeight={500} fontSize={styles.staticfontSize.md}>
+            fareedkamal.dev@gmail.com
+          </Typography>
+          <Typography fontWeight={500} fontSize={styles.staticfontSize.md}>
+            Linkedin
+          </Typography>
+          <Typography fontWeight={500} fontSize={styles.staticfontSize.md}>
+            Github
+          </Typography>
+        </Stack>
+      </Stack>
+      <Stack
+        sx={{
+          bgcolor: '#202127',
+          color: 'white',
+          p: 5,
+          borderRadius: 4,
         }}
       >
-        <Section>
-          <Grid
-            sx={{
-              backgroundColor: styles.secondaryPallete[1],
-              px: 5,
-              py: 10,
-            }}
-            container
-          >
-            <Grid
-              sx={{ mt: 3, display: 'flex', flexDirection: 'column', gap: 5 }}
-              item
-              md={3}
-              xs={12}
+        <Typography mb={2} fontSize={styles.staticfontSize.lg}>
+          UI / Front-end
+        </Typography>
+        <Stack direction={'row'} flexWrap={'wrap'} gap={1}>
+          {skills.frontEnd.map((item) => (
+            <Box
+              sx={{
+                width: 'fit-content',
+                px: 4,
+                py: 1,
+                borderRadius: 10,
+                bgcolor: '#3453ff',
+              }}
             >
-              <Stack sx={{ wordBreak: 'break-word' }}>
-                <Typography fontSize={styles.fontSize.md}>
-                  Lahore, Pakistan
-                </Typography>
-                <Typography
-                  fontWeight={700}
-                  color={styles.pallette[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  fareedkamal.dev@gmail.com
-                </Typography>
-                <Typography
-                  sx={{
-                    textDecoration: 'none',
-                  }}
-                  component={'a'}
-                  target='_blank'
-                  href='https://linkedin.com/in/fareedkamal'
-                  fontWeight={700}
-                  color={styles.pallette[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  linkedin.com/fareedkamal
-                </Typography>
-                <Typography
-                  sx={{
-                    textDecoration: 'none',
-                  }}
-                  component={'a'}
-                  target='_blank'
-                  href='https://github.com/fareedkamal'
-                  fontWeight={700}
-                  color={styles.pallette[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  github.com/fareedkamal
-                </Typography>
-              </Stack>
-              <Stack component={'ul'} fontSize={styles.fontSize.md}>
-                <Typography
-                  fontWeight={700}
-                  color={styles.pallette[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  Front-end:
-                </Typography>
-
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  ReactJS
-                </Typography>
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  HTML / CSS
-                </Typography>
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  Redux
-                </Typography>
-
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  Material UI
-                </Typography>
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  Tailwind CSS
-                </Typography>
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  Framer Motion
-                </Typography>
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  Bootstrap
-                </Typography>
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  Webpack
-                </Typography>
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  Vite
-                </Typography>
-              </Stack>
-              <Stack component={'ul'} fontSize={styles.fontSize.md}>
-                <Typography
-                  fontWeight={700}
-                  color={styles.pallette[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  Back-end:
-                </Typography>
-
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  NodeJS
-                </Typography>
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  ExpressJS
-                </Typography>
-
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  AdonisJS
-                </Typography>
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  MySQL
-                </Typography>
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  MongoDB
-                </Typography>
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  GraphQL
-                </Typography>
-              </Stack>
-              <Stack component={'ul'} fontSize={styles.fontSize.md}>
-                <Typography
-                  fontWeight={700}
-                  color={styles.pallette[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  Other:
-                </Typography>
-
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  Python
-                </Typography>
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  Typescript
-                </Typography>
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  Selenium / Data Scraping
-                </Typography>
-
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  AWS
-                </Typography>
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  Git / Github
-                </Typography>
-                <Typography
-                  component={'li'}
-                  color={styles.secondaryPallete[2]}
-                  fontSize={styles.fontSize.md}
-                >
-                  Vercel
-                </Typography>
-              </Stack>
-            </Grid>
-            <Grid item md={9} xs={12}>
-              <Stack>
-                <Typography
-                  color={styles.pallette[2]}
-                  fontWeight={700}
-                  fontSize={styles.fontSize.xlg}
-                >
-                  Fareed Kamal
-                </Typography>
-                <Typography fontSize={styles.fontSize.md}>
-                  Full Stack Developer & Software Engineer
-                </Typography>
-                <Typography mt={3} fontSize={styles.fontSize.md}>
-                  Highly skilled Full Stack Developer, specializing in creating
-                  cutting-edge web applications. Adept at utilizing modern
-                  frameworks and languages to deliver innovative solutions that
-                  enhance user experiences.
-                </Typography>
-                <Divider sx={{ my: 3 }} />
-              </Stack>
-              <Stack spacing={3}>
-                <Stack spacing={1}>
-                  <Typography
-                    color={styles.pallette[2]}
-                    fontSize={styles.fontSize.md}
-                    fontWeight={700}
-                  >
-                    Experience
-                  </Typography>
-                  <Typography
-                    color={styles.secondaryPallete[2]}
-                    fontSize={styles.fontSize.md}
-                  >
-                    I've worked on a handful of web projects over the years,
-                    some of which were for the following organizations:
-                  </Typography>
-                </Stack>
-                <Stack spacing={3}>
-                  {resumeData.experience.map((exp) => (
-                    <Experience key={exp.id} exp={exp} />
-                  ))}
-                </Stack>
-              </Stack>
-            </Grid>
-          </Grid>
-        </Section>
-      </Box>
-    </>
+              <Typography fontSize={styles.staticfontSize.md}>
+                {item}
+              </Typography>
+            </Box>
+          ))}
+        </Stack>
+      </Stack>
+      <Stack
+        sx={{
+          bgcolor: '#202127',
+          color: 'white',
+          p: 5,
+          borderRadius: 4,
+        }}
+      >
+        <Typography mb={2} fontSize={styles.staticfontSize.lg}>
+          Server / Database / Back-end
+        </Typography>
+        <Stack direction={'row'} flexWrap={'wrap'} gap={1}>
+          {skills.backEnd.map((item) => (
+            <Box
+              sx={{
+                width: 'fit-content',
+                px: 4,
+                py: 1,
+                borderRadius: 10,
+                bgcolor: '#3453ff',
+              }}
+            >
+              <Typography fontSize={styles.staticfontSize.md}>
+                {item}
+              </Typography>
+            </Box>
+          ))}
+        </Stack>
+      </Stack>
+    </Section>
   );
+};
+
+const skills = {
+  frontEnd: [
+    'HTML5',
+    'CSS3',
+    'Javascript ES6',
+    'React JS',
+    'Next JS',
+    'Material UI',
+    'Tailwind CSS',
+    'Framer Motion',
+    'Bootstrap',
+    'Webpack',
+    'Vite',
+  ],
+  backEnd: [
+    'Node JS',
+    'Express JS',
+    'Adonis JS',
+    'MySQL',
+    'MongoDB',
+    'GraphQL',
+    'AWS',
+  ],
 };
 
 const Experience = ({ exp }) => {

@@ -2,6 +2,7 @@ import { Box, Stack, Typography } from '@mui/material';
 import { styles } from '../../style/styles';
 import Menu from './Menu';
 import { Link } from 'react-router-dom';
+import Section from '../../components/shared/Section';
 
 const Navbar = () => {
   return (
@@ -10,39 +11,30 @@ const Navbar = () => {
         width: '100%',
         position: 'fixed',
         zIndex: 2,
+        py: 2,
         top: 0,
       }}
     >
-      <Stack
-        component={'nav'}
-        direction={'row'}
-        justifyContent={'space-between'}
-        alignItems={'center'}
-        sx={{
-          width: { lg: '1200px', md: '700px', sm: '500px', xs: '300px' },
-          margin: 'auto',
-          height: { sm: '100px', xs: '60px' },
-        }}
-      >
-        <Link to='/me' style={{ textDecoration: 'none' }}>
-          <div className='hover-wrapper'>
+      <Section>
+        <Stack
+          direction={'row'}
+          component={'nav'}
+          justifyContent={'space-between'}
+          alignItems={'center'}
+        >
+          <Link to='/me' style={{ textDecoration: 'none' }}>
             <Typography
-              className='hover-style'
               sx={{
-                '&:hover': {
-                  color: 'white',
-                },
+                color: 'white',
               }}
-              fontWeight={900}
-              fontSize={styles.fontSize.md}
-              color={styles.pallette[2]}
+              fontSize={styles.staticfontSize.md}
             >
               fareedkamal.dev
             </Typography>
-          </div>
-        </Link>
-        <Menu />
-      </Stack>
+          </Link>
+          <Menu />
+        </Stack>
+      </Section>
     </Box>
   );
 };

@@ -2,17 +2,24 @@
   position: relative;
 }
 
+.menu-blur-bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #00000075;
+  backdrop-filter: blur(15px);
+  z-index: -1;
+}
+
 .menu {
   height: 0;
   width: 0;
-  background-color: white;
   position: absolute;
   right: 0;
   opacity: 0;
   z-index: -1;
   top: 0;
   transition: all ease-in 0.2s;
-  box-shadow: 1px 1px 50px -30px #1300ff;
 }
 
 .menu.menu-active {
@@ -23,7 +30,6 @@
 }
 
 .menu-button {
-  background-color: #ff6334f5;
   height: 60px;
   width: 60px;
   border-radius: 100%;
@@ -43,14 +49,12 @@
 }
 
 .line-1-animate {
-  background-color: #ff6334f5;
   transform: rotate(45deg) translate(5px, 6px);
   transition: all ease 0.3s;
   width: 60%;
 }
 
 .line-2-animate {
-  background-color: #ff6334f5;
   transform: rotate(-45deg) translate(3px, -3px);
   transition: all ease 0.3s;
   width: 60%;

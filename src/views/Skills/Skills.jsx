@@ -2,7 +2,34 @@ import { Box, Stack, Typography } from '@mui/material';
 import Section from '../../components/shared/Section';
 import { styles } from '../../style/styles';
 import { useInView } from 'react-intersection-observer';
-7;
+
+const list = [
+  {
+    id: 1,
+    src: 'icons/front-end.png',
+    title: 'UI / Front-end',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto eos in at asperiores reprehenderit veritatis totam dignissimos sunt voluptatibus.',
+  },
+  {
+    id: 2,
+    src: 'icons/back-end.png',
+    title: 'Database / Back-end',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto eos in at asperiores reprehenderit veritatis totam dignissimos sunt voluptatibus.',
+  },
+  {
+    id: 3,
+    src: 'icons/aws.png',
+    title: 'Cloud / Server',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto eos in at asperiores reprehenderit veritatis totam dignissimos sunt voluptatibus.',
+  },
+  {
+    id: 4,
+    src: 'icons/deployment.png',
+    title: 'Deployment',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto eos in at asperiores reprehenderit veritatis totam dignissimos sunt voluptatibus.',
+  },
+];
+
 const Skills = () => {
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once when the element enters the viewport
@@ -16,109 +43,51 @@ const Skills = () => {
       sx={{
         width: '100%',
         overflow: 'hidden',
+        py: 5,
+        bgcolor: styles.newPallette[0],
       }}
     >
       <Section>
-        <Stack
+        <Box
           className={`box ${inView ? 'animate' : ''}`}
-          sx={{ py: 20, height: '100%' }}
-          spacing={5}
-          justifyContent={'center'}
+          sx={{
+            display: 'grid',
+            gridTemplateColumns: {
+              sm: '1fr 1fr',
+              xs: '1fr',
+            },
+            gap: 2,
+          }}
         >
-          <Stack direction={'row'} alignItems={'center'}>
-            <Box flex={1}>
+          {list.map((item) => (
+            <Box
+              key={item.id}
+              sx={{
+                bgcolor: '#202127',
+                borderRadius: 4,
+                flex: 1,
+                p: 3,
+              }}
+            >
+              <div className='icon-wrapper'>
+                <img className='skill-icon' src={item.src} />
+              </div>
               <Typography
-                color={styles.pallette[2]}
-                fontWeight={900}
-                fontSize={styles.fontSize.lg}
+                mt={3}
+                color={'white'}
+                fontSize={styles.staticfontSize.md}
                 gutterBottom
               >
-                Front-end Development
+                {item.title}
               </Typography>
-              <Typography fontSize={styles.fontSize.md}>
-                I specialize in React and JavaScript to create dynamic and
-                responsive user interfaces. My attention to pixel-perfect design
-                ensures that every element aligns flawlessly with your vision.
-                Using Figma, I meticulously design, prototype and code, bringing
-                ideas to life with precision and style.
+              <Typography color='#dddd' fontSize={styles.staticfontSize.md}>
+                {item.desc}
               </Typography>
             </Box>
-            <Box
-              sx={{
-                display: { lg: 'unset', xs: 'none' },
-              }}
-              flex={1.5}
-            >
-              <Stack
-                margin={'auto'}
-                width={'fit-content'}
-                direction={'row'}
-                spacing={0.5}
-              >
-                <Dot />
-                <Dot />
-                <Dot />
-                <Dot />
-                <Dot />
-              </Stack>
-            </Box>
-          </Stack>
-          <Stack direction={'row'} alignItems={'center'}>
-            <Box
-              sx={{
-                display: { lg: 'unset', xs: 'none' },
-              }}
-              flex={1.5}
-            >
-              <Stack
-                margin={'auto'}
-                width={'fit-content'}
-                direction={'row'}
-                spacing={0.5}
-              >
-                <Dot />
-                <Dot />
-                <Dot />
-                <Dot />
-                <Dot />
-              </Stack>
-            </Box>
-            <Box flex={1}>
-              <Typography
-                color={styles.pallette[2]}
-                fontWeight={900}
-                fontSize={styles.fontSize.lg}
-                gutterBottom
-              >
-                Back-end Development
-              </Typography>
-              <Typography fontSize={styles.fontSize.md}>
-                I utilize Node.js, MySQL, and MongoDB to build robust and
-                efficient solutions. With a keen eye for database management and
-                server-side logic, I ensure your systems operate smoothly and
-                securely. My focus on clean and maintainable code guarantees
-                your applications run seamlessly, even when handling complex
-                data and processes.
-              </Typography>
-            </Box>
-          </Stack>
-        </Stack>
+          ))}
+        </Box>
       </Section>
     </Box>
-  );
-};
-
-const Dot = () => {
-  return (
-    <Box
-      sx={{
-        height: '10px',
-        width: '10px',
-        opacity: 0.5,
-        border: `1px solid ${styles.pallette[2]}`,
-        borderRadius: '100%',
-      }}
-    />
   );
 };
 

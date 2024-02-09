@@ -30,14 +30,15 @@ const Menu = () => {
       <div
         style={{
           overflow: 'hidden',
+          borderRadius: 20,
         }}
         className={`menu ${isMenuOpen ? 'menu-active' : ''}`}
       >
+        <div className='menu-blur-bg' />
         <Stack
           sx={{
             px: { lg: 10, sm: 10, xs: 4 },
             py: { lg: 12, sm: 12, xs: 6 },
-            color: styles.pallette[2],
             height: '100%',
             justifyContent: 'space-between',
           }}
@@ -45,20 +46,22 @@ const Menu = () => {
           <Stack spacing={2}>
             <Link
               to='/me/work'
-              style={{ textDecoration: 'none', color: styles.pallette[2] }}
+              style={{ textDecoration: 'none', color: 'white' }}
             >
               <Typography fontSize={styles.fontSize.md}>My Work</Typography>
             </Link>
             <Link
               to='/me/resume'
-              style={{ textDecoration: 'none', color: styles.pallette[2] }}
+              style={{ textDecoration: 'none', color: 'white' }}
             >
               <Typography fontSize={styles.fontSize.md}>My Resume</Typography>
             </Link>
           </Stack>
           <Stack spacing={2}>
-            <Typography fontSize={styles.fontSize.md}>SAY HELLO</Typography>
-            <Typography fontSize={styles.fontSize.md}>
+            <Typography color={'white'} fontSize={styles.fontSize.md}>
+              SAY HELLO
+            </Typography>
+            <Typography color={'white'} fontSize={styles.fontSize.md}>
               fareedkamal.dev@gmail.com
             </Typography>
           </Stack>

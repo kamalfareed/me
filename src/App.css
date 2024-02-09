@@ -64,3 +64,17 @@
   opacity: 1;
   left: 0;
 }
+
+.icon-wrapper {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #40424f;
+  border-radius: 10px;
+}
+
+.skill-icon {
+  width: 60%;
+}

@@ -17,32 +17,38 @@ const Message = () => {
       ref={ref}
       sx={{
         width: '100%',
-        py: 10,
+        py: 5,
         overflow: 'hidden',
+        bgcolor: styles.newPallette[0],
       }}
     >
       <Section>
-        <Stack className={`box ${inView ? 'animate' : ''}`} spacing={10}>
-          <Stack
-            m={'auto'}
-            textAlign={'center'}
-            spacing={2}
-            color={styles.pallette[2]}
-          >
-            <Typography fontWeight={800} fontSize={40}>
+        <Stack
+          className={`box ${inView ? 'animate' : ''}`}
+          bgcolor={styles.newPallette[1]}
+          borderRadius={4}
+          p={5}
+          color={'white'}
+          spacing={{ md: 10, xs: 5 }}
+        >
+          <Stack m={'auto'} textAlign={'center'} spacing={2}>
+            <Typography fontWeight={800} fontSize={styles.staticfontSize.lg}>
               Send me a message!
             </Typography>
-            <Typography fontSize={20}>
+            <Typography
+              color={styles.newPallette[2]}
+              fontSize={styles.staticfontSize.md}
+            >
               Got a question or proposal, or just want to say hello? Go ahead.
             </Typography>
           </Stack>
           <Stack
-            direction={{ lg: 'row', xs: 'column' }}
+            direction={{ sm: 'row', xs: 'column' }}
             justifyItems={'center'}
-            spacing={15}
+            spacing={{ md: 15, xs: 5 }}
           >
             <Box flex={1}>
-              <Typography mb={3} fontSize={styles.fontSize.md}>
+              <Typography mb={3} fontSize={styles.staticfontSize.md}>
                 Your Name
               </Typography>
               <Input
@@ -50,15 +56,14 @@ const Message = () => {
                 placeholder='Enter your name'
                 sx={{
                   pb: 1,
-                  fontSize: styles.fontSize.md,
-                  '&:after': {
-                    borderBottom: `2px solid ${styles.pallette[2]}`,
-                  },
+                  color: 'white',
+                  borderBottom: '1px solid grey',
+                  fontSize: styles.staticfontSize.md,
                 }}
               />
             </Box>
             <Box flex={1}>
-              <Typography mb={3} fontSize={styles.fontSize.md}>
+              <Typography mb={3} fontSize={styles.staticfontSize.md}>
                 Email Address
               </Typography>
               <Input
@@ -66,16 +71,15 @@ const Message = () => {
                 placeholder='Enter your email address'
                 sx={{
                   pb: 1,
-                  fontSize: styles.fontSize.md,
-                  '&:after': {
-                    borderBottom: `2px solid ${styles.pallette[2]}`,
-                  },
+                  fontSize: styles.staticfontSize.md,
+                  color: 'white',
+                  borderBottom: '1px solid grey',
                 }}
               />
             </Box>
           </Stack>
           <Box>
-            <Typography mb={3} fontSize={styles.fontSize.md}>
+            <Typography mb={3} fontSize={styles.staticfontSize.md}>
               Your Message
             </Typography>
             <Input
@@ -84,24 +88,41 @@ const Message = () => {
               placeholder='Hi, I think we need a design system for our products at Company X. How soon can you hop on to discuss this?'
               sx={{
                 pb: 1,
-                fontSize: styles.fontSize.md,
-                '&:after': {
-                  borderBottom: `2px solid ${styles.pallette[2]}`,
-                },
+                fontSize: styles.staticfontSize.md,
+                color: 'white',
+                borderBottom: '1px solid grey',
               }}
             />
           </Box>
-          <Stack alignItems={'center'}>
-            <Link
-              style={{
-                textDecoration: 'none',
+
+          <Link
+            style={{
+              textDecoration: 'none',
+              display: 'flex',
+              justifyContent: 'center',
+            }}
+            target='_blank'
+            to={'https://www.upwork.com/freelancers/fareedkamal'}
+          >
+            <Box
+              sx={{
+                bgcolor: '#3453ff',
+                color: 'white',
+                fontWeight: 700,
+                alignItems: 'center',
+                p: 2,
+                flex: 0.5,
+                textAlign: 'center',
+                fontSize: styles.staticfontSize.md,
+                borderRadius: 10,
+                '&:hover': {
+                  bgcolor: '#0027ff',
+                },
               }}
-              target='_blank'
-              to={'https://www.upwork.com/freelancers/fareedkamal'}
             >
-              <StyledButton title='SHOOT' />
-            </Link>
-          </Stack>
+              Send
+            </Box>
+          </Link>
         </Stack>
       </Section>
     </Box>

@@ -75,3 +75,16 @@
     top: 15em;
   }
 }
+
+.blur-profile-bg {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(
+    276deg,
+    rgb(255 112 7) 0%,
+    rgba(253, 253, 253, 1) 100%
+  );
+  border-radius: 100%;
+  filter: blur(103px);
+}

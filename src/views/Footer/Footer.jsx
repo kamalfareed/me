@@ -4,55 +4,48 @@ import { styles } from '../../style/styles';
 import { Link } from 'react-router-dom';
 import linkedinLogo from 'src/assets/logos/linkedin.png';
 import upworkLogo from 'src/assets/logos/upwork.png';
+import Section from '../../components/shared/Section';
 
 const Footer = () => {
   return (
     <Box
       sx={{
         width: '100%',
-        py: { lg: 10, xs: 4 },
-        bgcolor: 'rgba(49,80,255,1)',
+        py: 5,
+        bgcolor: styles.newPallette[0],
       }}
     >
-      <StyledFooter>
+      <Section>
         <Stack
           mb={{ lg: 15, xs: 5 }}
-          direction={{ lg: 'row', xs: 'column' }}
-          spacing={{ lg: 50, xs: 5 }}
+          direction={{ sm: 'row', xs: 'column' }}
+          spacing={{ md: 50, xs: 5 }}
         >
-          <Stack fontSize={styles.fontSize.md} color={'white'} spacing={4}>
-            <Typography fontSize={styles.fontSize.md}>SAY HELLO</Typography>
-            <Typography fontSize={styles.fontSize.md}>
-              fareedkamal.dev@gmail.com
-            </Typography>
+          <Stack
+            fontSize={styles.staticfontSize.md}
+            color={'white'}
+            spacing={4}
+          >
+            <Typography>SAY HELLO</Typography>
+            <Typography>fareedkamal.dev@gmail.com</Typography>
           </Stack>
-          <Stack color={'white'} spacing={4} fontSize={styles.fontSize.md}>
+          <Stack color={'white'} spacing={4}>
             <Link
               to='/me/work'
               style={{ textDecoration: 'none', color: 'white' }}
             >
-              <div className='hover-wrapper'>
-                <Typography
-                  className='hover-style'
-                  fontSize={styles.fontSize.md}
-                >
-                  My Work
-                </Typography>
-              </div>
+              <Typography fontSize={styles.staticfontSize.md}>
+                My Work
+              </Typography>
             </Link>
 
             <Link
               to='/me/resume'
               style={{ textDecoration: 'none', color: 'white' }}
             >
-              <div className='hover-wrapper'>
-                <Typography
-                  className='hover-style'
-                  fontSize={styles.fontSize.md}
-                >
-                  My Resume
-                </Typography>
-              </div>
+              <Typography fontSize={styles.staticfontSize.md}>
+                My Resume
+              </Typography>
             </Link>
           </Stack>
         </Stack>
@@ -65,8 +58,9 @@ const Footer = () => {
           direction={{ lg: 'row', xs: 'column-reverse' }}
           justifyContent={'space-between'}
           alignItems={'center'}
+          fontSize={styles.staticfontSize.md}
         >
-          <Typography>© Fareed Kamal 2023</Typography>
+          <Typography>© Fareed Kamal 2024</Typography>
           <Stack direction={'row'} spacing={5} alignItems={'center'}>
             <Link target='_blank' to={'https://linkedin.com/in/fareedkamal'}>
               <img
@@ -105,7 +99,7 @@ const Footer = () => {
             </Link>
           </Stack>
         </Stack>
-      </StyledFooter>
+      </Section>
     </Box>
   );
 };

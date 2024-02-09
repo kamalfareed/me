@@ -5,6 +5,7 @@ import '../public/font-all/stylesheet.css';
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './routes.jsx';
+import ScrollToTop from './components/utils/ScrollToTop.jsx';
 
 const theme = createTheme({
   typography: {
