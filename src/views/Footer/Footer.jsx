@@ -23,7 +23,15 @@ const Footer = () => {
         >
           <Stack color={'white'} spacing={4}>
             <Typography fontSize={styles.fontSize.md}>SAY HELLO</Typography>
-            <Typography fontSize={styles.fontSize.md}>
+            <Typography
+              component={'a'}
+              href='mailto:fareedkamal.dev@gmail.com'
+              sx={{
+                textDecoration: 'none',
+                color: 'white',
+              }}
+              fontSize={styles.fontSize.md}
+            >
               fareedkamal.dev@gmail.com
             </Typography>
           </Stack>

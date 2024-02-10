@@ -1,7 +1,6 @@
 import { Box, Stack, Typography } from '@mui/material';
 import Section from '../../components/shared/Section';
 import { styles } from '../../style/styles';
-import StarIcon from '@mui/icons-material/Star';
 import { Star } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +8,7 @@ const Portfolio = () => {
   return (
     <Section
       sx={{
-        py: 5,
+        py: 10,
       }}
     >
       <Box
@@ -49,26 +48,53 @@ const Portfolio = () => {
                 access to insights from the Oslo Stock Exchange.
               </Typography>
             </Box>
-            <Link to='/me/work/tjuvholmen' style={{ textDecoration: 'none' }}>
-              <Box
-                sx={{
-                  bgcolor: '#3453ff',
-                  width: 'fit-content',
-                  color: 'white',
-                  fontWeight: 500,
-                  p: 1,
-                  px: 2,
-                  textAlign: 'center',
-                  fontSize: styles.fontSize.md,
-                  borderRadius: 10,
-                  '&:hover': {
-                    bgcolor: '#0027ff',
-                  },
-                }}
+
+            <Stack direction={'row'} spacing={2}>
+              <Link
+                target='_blank'
+                to={'https://tjuvholmen.club'}
+                style={{ textDecoration: 'none' }}
               >
-                See Details
-              </Box>
-            </Link>
+                <Box
+                  sx={{
+                    bgcolor: '#3453ff',
+                    width: 'fit-content',
+                    color: 'white',
+                    fontWeight: 500,
+                    p: 1,
+                    px: 2,
+                    textAlign: 'center',
+                    fontSize: styles.fontSize.md,
+                    borderRadius: 10,
+                    '&:hover': {
+                      bgcolor: '#0027ff',
+                    },
+                  }}
+                >
+                  Visit Website
+                </Box>
+              </Link>
+              <Link to='/me/work/tjuvholmen' style={{ textDecoration: 'none' }}>
+                <Box
+                  sx={{
+                    bgcolor: '#3453ff',
+                    width: 'fit-content',
+                    color: 'white',
+                    fontWeight: 500,
+                    p: 1,
+                    px: 2,
+                    textAlign: 'center',
+                    fontSize: styles.fontSize.md,
+                    borderRadius: 10,
+                    '&:hover': {
+                      bgcolor: '#0027ff',
+                    },
+                  }}
+                >
+                  Technical Details
+                </Box>
+              </Link>
+            </Stack>
           </Box>
           <Box
             flex={1}

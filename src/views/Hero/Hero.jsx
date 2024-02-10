@@ -6,6 +6,7 @@ import profileImg from 'src/assets/profile.png';
 import heroGraphic2 from 'src/assets/heroGraphic2.png';
 import element2 from 'src/assets/element2.png';
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const [ref, inView] = useInView({
@@ -35,7 +36,7 @@ const Hero = () => {
           }}
         >
           <Box
-            width={{ lg: '50%', xs: '100%' }}
+            width={{ md: '50%', xs: '100%' }}
             textAlign={{ lg: 'unset', xs: 'center' }}
           >
             <Typography
@@ -56,6 +57,53 @@ const Hero = () => {
               I like to craft solid and scalable software products with great
               user experiences.
             </Typography>
+            <Stack
+              mt={3}
+              justifyContent={{ lg: 'start', xs: 'center' }}
+              direction={'row'}
+              spacing={2}
+            >
+              <Link to='/me/work' style={{ textDecoration: 'none' }}>
+                <Box
+                  sx={{
+                    bgcolor: '#3453ff',
+                    width: 'fit-content',
+                    color: 'white',
+                    fontWeight: 500,
+                    p: 1,
+                    px: 4,
+                    textAlign: 'center',
+                    fontSize: styles.fontSize.md,
+                    borderRadius: 10,
+                    '&:hover': {
+                      bgcolor: '#0027ff',
+                    },
+                  }}
+                >
+                  Work
+                </Box>
+              </Link>
+              <Link to='/me/resume' style={{ textDecoration: 'none' }}>
+                <Box
+                  sx={{
+                    bgcolor: '#3453ff',
+                    width: 'fit-content',
+                    color: 'white',
+                    fontWeight: 500,
+                    p: 1,
+                    px: 4,
+                    textAlign: 'center',
+                    fontSize: styles.fontSize.md,
+                    borderRadius: 10,
+                    '&:hover': {
+                      bgcolor: '#0027ff',
+                    },
+                  }}
+                >
+                  Resume
+                </Box>
+              </Link>
+            </Stack>
           </Box>
           <Box
             sx={{

@@ -51,13 +51,55 @@ const Resume = () => {
           <Typography fontWeight={500} fontSize={styles.fontSize.md}>
             Lahore, Pakistan
           </Typography>
-          <Typography fontWeight={500} fontSize={styles.fontSize.md}>
+          <Typography
+            sx={{
+              textDecoration: 'none',
+              color: 'white',
+            }}
+            component={'a'}
+            href='mailto:fareedkamal.dev@gmail.com'
+            fontWeight={500}
+            fontSize={styles.fontSize.md}
+          >
             fareedkamal.dev@gmail.com
           </Typography>
-          <Typography fontWeight={500} fontSize={styles.fontSize.md}>
+          <Typography
+            sx={{
+              textDecoration: 'none',
+              color: 'white',
+            }}
+            component={'a'}
+            target='_blank'
+            href='https://linkedin.com/in/fareedkamal'
+            fontWeight={500}
+            fontSize={styles.fontSize.md}
+          >
             Linkedin
           </Typography>
-          <Typography fontWeight={500} fontSize={styles.fontSize.md}>
+          <Typography
+            sx={{
+              textDecoration: 'none',
+              color: 'white',
+            }}
+            component={'a'}
+            target='_blank'
+            href='https://upwork.com/fareedkamal'
+            fontWeight={500}
+            fontSize={styles.fontSize.md}
+          >
+            Upwork
+          </Typography>
+          <Typography
+            sx={{
+              textDecoration: 'none',
+              color: 'white',
+            }}
+            component={'a'}
+            target='_blank'
+            href='https://github.com/fareedkamal'
+            fontWeight={500}
+            fontSize={styles.fontSize.md}
+          >
             Github
           </Typography>
         </Stack>
@@ -143,55 +185,6 @@ const skills = {
     'GraphQL',
     'AWS',
   ],
-};
-
-const Experience = ({ exp }) => {
-  const { company, title, duration, desc, tasks } = exp;
-  return (
-    <Stack spacing={2}>
-      <Stack direction={'row'} justifyContent={'space-between'}>
-        <Stack direction={'row'} spacing={2}>
-          <Typography
-            fontSize={styles.fontSize.md}
-            fontWeight={600}
-            color={styles.pallette[2]}
-          >
-            {company}
-          </Typography>
-          <Typography
-            color={styles.secondaryPallete[2]}
-            fontSize={styles.fontSize.md}
-          >
-            {title}
-          </Typography>
-        </Stack>
-        <Typography
-          color={styles.secondaryPallete[2]}
-          fontSize={styles.fontSize.md}
-        >
-          {duration}
-        </Typography>
-      </Stack>
-      <Typography
-        fontSize={styles.fontSize.md}
-        color={styles.secondaryPallete[2]}
-      >
-        {desc}
-      </Typography>
-      <Stack component={'ul'} spacing={1}>
-        {tasks.map((task) => (
-          <Typography
-            component={'li'}
-            key={task.id}
-            color={styles.secondaryPallete[2]}
-            fontSize={styles.fontSize.md}
-          >
-            {task.desc}
-          </Typography>
-        ))}
-      </Stack>
-    </Stack>
-  );
 };
 
 export default Resume;

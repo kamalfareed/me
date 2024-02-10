@@ -55,7 +55,16 @@ const Menu = () => {
             <Typography color={'white'} fontSize={styles.fontSize.md}>
               SAY HELLO
             </Typography>
-            <Typography color={'white'} fontSize={styles.fontSize.md}>
+            <Typography
+              color={'white'}
+              component={'a'}
+              href='mailto:fareedkamal.dev@gmail.com'
+              sx={{
+                textDecoration: 'none',
+                color: 'white',
+              }}
+              fontSize={styles.fontSize.md}
+            >
               fareedkamal.dev@gmail.com
             </Typography>
           </Stack>

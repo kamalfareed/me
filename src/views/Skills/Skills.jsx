@@ -8,25 +8,25 @@ const list = [
     id: 1,
     src: 'icons/front-end.png',
     title: 'UI / Front-end',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto eos in at asperiores reprehenderit veritatis totam dignissimos sunt voluptatibus.',
+    desc: 'Elevate your digital presence with captivating UI and front-end development. From sleek designs to seamless user experiences, I craft visually appealing and responsive interfaces that leave a lasting impression.',
   },
   {
     id: 2,
     src: 'icons/back-end.png',
     title: 'Database / Back-end',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto eos in at asperiores reprehenderit veritatis totam dignissimos sunt voluptatibus.',
+    desc: 'Empower your applications with robust backend solutions. I specialize in crafting scalable databases and APIs, ensuring seamless communication between your frontend and backend systems for optimal performance and data management.',
   },
   {
     id: 3,
     src: 'icons/aws.png',
     title: 'Cloud / Server',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto eos in at asperiores reprehenderit veritatis totam dignissimos sunt voluptatibus.',
+    desc: 'Harness the power of the cloud with expert server setup. From AWS to Azure, I configure and optimize cloud environments tailored to your project needs, providing scalability, security, and reliability for your applications.',
   },
   {
     id: 4,
     src: 'icons/deployment.png',
     title: 'Deployment',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto eos in at asperiores reprehenderit veritatis totam dignissimos sunt voluptatibus.',
+    desc: 'I offer end-to-end support. From routine maintenance to streamlined product shipping and deployment processes, I ensure your applications run smoothly, allowing you to focus on your core business while I handle the technical intricacies.',
   },
 ];
 
