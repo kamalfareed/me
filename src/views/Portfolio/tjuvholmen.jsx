@@ -56,28 +56,28 @@ const details = [
     One of the key highlights is the "Morning Report," a daily digest that encapsulates crucial market events from both local and global perspectives. This includes stock exchange-sensitive news, quarterly results, trading updates, traditional ideas, and more, ensuring users stay well-informed about the dynamic world of stock trading.
     
     In summary, Tjuvholmen is a comprehensive SaaS solution that enhances user access to stock reports, analysis, and valuable market insights, coupled with a feature-rich admin dashboard for seamless management of user interactions, report uploads, and subscriptions.`,
-    images: ['/tjuvholmen/login-page.png', '/work/1.png'],
+    images: ['me/tjuvholmen/login-page.png', 'me/work/1.png'],
   },
   {
     id: 2,
     title: 'Stock Reports Listing',
     desc: `The Reports Listing feature on Tjuvholmen provides users with a seamless and organized interface to access a wealth of stock reports on the Oslo Stock Exchange. With intuitive categorization and search capabilities, users can effortlessly navigate through a comprehensive listing, ensuring they find the information they need efficiently.`,
-    images: ['/tjuvholmen/reports-page.png', '/tjuvholmen/report-page.png'],
+    images: ['me/tjuvholmen/reports-page.png', 'me/tjuvholmen/report-page.png'],
   },
   {
     id: 3,
     title: 'Report Editor',
     desc: `Tjuvholmen's Report Editor empowers users to tailor stock analyses to their specific needs. The user-friendly interface allows for easy customization, editing, and annotation of reports. Whether users want to highlight key insights, add personal notes, or extract specific data, the Report Editor ensures a flexible and personalized analysis experience.`,
-    images: ['/tjuvholmen/report-editor.png'],
+    images: ['me/tjuvholmen/report-editor.png'],
   },
   {
     id: 3,
     title: 'Admin Dashboard',
     desc: `The Admin Dashboard serves as the command center for Tjuvholmen, offering robust tools for efficient platform management. In terms of report management, administrators can effortlessly upload, organize, and monitor stock reports. User management functionalities facilitate simple user creation, authentication, and control over access levels. Database management tools ensure the platform operates optimally, while analytics features provide valuable insights by tracking download and view counts, contributing to informed decision-making for the platform's growth and user engagement.`,
     images: [
-      '/tjuvholmen/dashboard.png',
-      '/tjuvholmen/reports-listing.png',
-      '/tjuvholmen/user-panel.png',
+      'me/tjuvholmen/dashboard.png',
+      'me/tjuvholmen/reports-listing.png',
+      'me/tjuvholmen/user-panel.png',
     ],
   },
 ];

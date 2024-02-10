@@ -130,7 +130,7 @@ const Portfolio = () => {
         </Stack>
         <Box
           component={'img'}
-          src={'/work/2.png'}
+          src={'me/work/2.png'}
           sx={{
             my: 2,
             width: '100%',
