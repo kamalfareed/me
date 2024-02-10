@@ -21,31 +21,25 @@ const Footer = () => {
           direction={{ sm: 'row', xs: 'column' }}
           spacing={{ md: 50, xs: 5 }}
         >
-          <Stack
-            fontSize={styles.staticfontSize.md}
-            color={'white'}
-            spacing={4}
-          >
-            <Typography>SAY HELLO</Typography>
-            <Typography>fareedkamal.dev@gmail.com</Typography>
+          <Stack color={'white'} spacing={4}>
+            <Typography fontSize={styles.fontSize.md}>SAY HELLO</Typography>
+            <Typography fontSize={styles.fontSize.md}>
+              fareedkamal.dev@gmail.com
+            </Typography>
           </Stack>
           <Stack color={'white'} spacing={4}>
             <Link
               to='/me/work'
               style={{ textDecoration: 'none', color: 'white' }}
             >
-              <Typography fontSize={styles.staticfontSize.md}>
-                My Work
-              </Typography>
+              <Typography fontSize={styles.fontSize.md}>My Work</Typography>
             </Link>
 
             <Link
               to='/me/resume'
               style={{ textDecoration: 'none', color: 'white' }}
             >
-              <Typography fontSize={styles.staticfontSize.md}>
-                My Resume
-              </Typography>
+              <Typography fontSize={styles.fontSize.md}>My Resume</Typography>
             </Link>
           </Stack>
         </Stack>
@@ -55,12 +49,14 @@ const Footer = () => {
           borderTop={'1px solid white'}
           py={5}
           spacing={5}
-          direction={{ lg: 'row', xs: 'column-reverse' }}
+          direction={{ sm: 'row', xs: 'column-reverse' }}
           justifyContent={'space-between'}
           alignItems={'center'}
-          fontSize={styles.staticfontSize.md}
+          fontSize={styles.fontSize.md}
         >
-          <Typography>© Fareed Kamal 2024</Typography>
+          <Typography fontSize={styles.fontSize.md}>
+            © Fareed Kamal 2024
+          </Typography>
           <Stack direction={'row'} spacing={5} alignItems={'center'}>
             <Link target='_blank' to={'https://linkedin.com/in/fareedkamal'}>
               <img

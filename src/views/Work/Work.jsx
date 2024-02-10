@@ -41,14 +41,14 @@ const Work = () => {
               <Typography
                 color='white'
                 mb={2}
-                fontSize={styles.staticfontSize.lg}
+                fontSize={styles.fontSize.lg}
                 fontWeight={500}
               >
                 I build & code stuff
               </Typography>
               <Typography
                 color={styles.newPallette[2]}
-                fontSize={styles.staticfontSize.md}
+                fontSize={styles.fontSize.md}
               >
                 Open source projects, web apps and experimentals.
               </Typography>
@@ -62,7 +62,7 @@ const Work = () => {
                   fontWeight: 700,
                   p: 2,
                   textAlign: 'center',
-                  fontSize: styles.staticfontSize.md,
+                  fontSize: styles.fontSize.md,
                   borderRadius: 10,
                   '&:hover': {
                     bgcolor: '#0027ff',
@@ -90,14 +90,14 @@ const Work = () => {
               <Typography
                 mb={2}
                 color='white'
-                fontSize={styles.staticfontSize.lg}
+                fontSize={styles.fontSize.lg}
                 fontWeight={500}
               >
                 I work in teams too
               </Typography>
               <Typography
                 color={styles.newPallette[2]}
-                fontSize={styles.staticfontSize.md}
+                fontSize={styles.fontSize.md}
               >
                 Professional experience, collaboration and Skills
               </Typography>
@@ -110,7 +110,7 @@ const Work = () => {
                   fontWeight: 700,
                   p: 2,
                   textAlign: 'center',
-                  fontSize: styles.staticfontSize.md,
+                  fontSize: styles.fontSize.md,
                   borderRadius: 10,
                   '&:hover': {
                     bgcolor: '#0027ff',

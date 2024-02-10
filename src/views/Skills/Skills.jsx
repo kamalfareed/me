@@ -75,12 +75,12 @@ const Skills = () => {
               <Typography
                 mt={3}
                 color={'white'}
-                fontSize={styles.staticfontSize.md}
+                fontSize={styles.fontSize.md}
                 gutterBottom
               >
                 {item.title}
               </Typography>
-              <Typography color='#dddd' fontSize={styles.staticfontSize.md}>
+              <Typography color='#dddd' fontSize={styles.fontSize.md}>
                 {item.desc}
               </Typography>
             </Box>

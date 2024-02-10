@@ -11,7 +11,6 @@ const Navbar = () => {
         width: '100%',
         position: 'fixed',
         zIndex: 2,
-        py: 2,
         top: 0,
       }}
     >
@@ -27,9 +26,9 @@ const Navbar = () => {
               sx={{
                 color: 'white',
               }}
-              fontSize={styles.staticfontSize.md}
+              fontSize={styles.fontSize.md}
             >
-              fareedkamal.dev
+              fareedkamal
             </Typography>
           </Link>
           <Menu />

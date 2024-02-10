@@ -32,11 +32,11 @@ const History = () => {
             }}
             spacing={1}
           >
-            <Typography fontWeight={500} fontSize={styles.staticfontSize.lg}>
+            <Typography fontWeight={500} fontSize={styles.fontSize.lg}>
               Over the years,
             </Typography>
             <Box>
-              <Typography fontSize={styles.staticfontSize.md} color={'#dddd'}>
+              <Typography fontSize={styles.fontSize.md} color={'#dddd'}>
                 Throughout my career as a software engineer, I've been fortunate
                 to work with several renowned companies. These experiences have
                 helped me refine my skills and develop a reputation for

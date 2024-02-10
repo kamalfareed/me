@@ -25,21 +25,21 @@ const Resume = () => {
         spacing={5}
       >
         <Stack flex={0.8}>
-          <Typography fontWeight={500} fontSize={styles.staticfontSize.xlg}>
+          <Typography fontWeight={500} fontSize={styles.fontSize.xlg}>
             Fareed Kamal
           </Typography>
           <Typography
             fontWeight={500}
             mb={2}
             color={styles.newPallette[2]}
-            fontSize={styles.staticfontSize.md}
+            fontSize={styles.fontSize.md}
           >
             Full Stack Dev / Software Engineer
           </Typography>
           <Typography
             fontWeight={500}
             color={styles.newPallette[2]}
-            fontSize={styles.staticfontSize.md}
+            fontSize={styles.fontSize.md}
           >
             Highly skilled Full Stack Developer, specializing in creating
             cutting-edge web applications. Adept at utilizing modern frameworks
@@ -48,16 +48,16 @@ const Resume = () => {
           </Typography>
         </Stack>
         <Stack spacing={2}>
-          <Typography fontWeight={500} fontSize={styles.staticfontSize.md}>
+          <Typography fontWeight={500} fontSize={styles.fontSize.md}>
             Lahore, Pakistan
           </Typography>
-          <Typography fontWeight={500} fontSize={styles.staticfontSize.md}>
+          <Typography fontWeight={500} fontSize={styles.fontSize.md}>
             fareedkamal.dev@gmail.com
           </Typography>
-          <Typography fontWeight={500} fontSize={styles.staticfontSize.md}>
+          <Typography fontWeight={500} fontSize={styles.fontSize.md}>
             Linkedin
           </Typography>
-          <Typography fontWeight={500} fontSize={styles.staticfontSize.md}>
+          <Typography fontWeight={500} fontSize={styles.fontSize.md}>
             Github
           </Typography>
         </Stack>
@@ -70,7 +70,7 @@ const Resume = () => {
           borderRadius: 4,
         }}
       >
-        <Typography mb={2} fontSize={styles.staticfontSize.lg}>
+        <Typography mb={2} fontSize={styles.fontSize.lg}>
           UI / Front-end
         </Typography>
         <Stack direction={'row'} flexWrap={'wrap'} gap={1}>
@@ -84,9 +84,7 @@ const Resume = () => {
                 bgcolor: '#3453ff',
               }}
             >
-              <Typography fontSize={styles.staticfontSize.md}>
-                {item}
-              </Typography>
+              <Typography fontSize={styles.fontSize.md}>{item}</Typography>
             </Box>
           ))}
         </Stack>
@@ -99,7 +97,7 @@ const Resume = () => {
           borderRadius: 4,
         }}
       >
-        <Typography mb={2} fontSize={styles.staticfontSize.lg}>
+        <Typography mb={2} fontSize={styles.fontSize.lg}>
           Server / Database / Back-end
         </Typography>
         <Stack direction={'row'} flexWrap={'wrap'} gap={1}>
@@ -113,9 +111,7 @@ const Resume = () => {
                 bgcolor: '#3453ff',
               }}
             >
-              <Typography fontSize={styles.staticfontSize.md}>
-                {item}
-              </Typography>
+              <Typography fontSize={styles.fontSize.md}>{item}</Typography>
             </Box>
           ))}
         </Stack>

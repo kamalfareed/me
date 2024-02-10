@@ -9,12 +9,6 @@ import upworkLogo from 'src/assets/logos/upwork.png';
 const Menu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const imgStyle = {
-    height: { lg: '30px', sm: '30px', xs: '20px' },
-    backgroundColor: styles.pallette[2],
-    borderRadius: '100%',
-  };
-
   return (
     <div className='menu-wrapper'>
       <div
@@ -67,23 +61,21 @@ const Menu = () => {
           </Stack>
           <Stack direction={'row'} spacing={5} alignItems={'center'}>
             <Link target='_blank' to={'https://linkedin.com/in/fareedkamal'}>
-              <Box component='img' sx={imgStyle} src={linkedinLogo} />
+              <Box
+                component='img'
+                sx={{ height: { sm: '40px', xs: '20px' } }}
+                src={linkedinLogo}
+              />
             </Link>
-            {/* <Box
-              component='img'
-              sx={imgStyle}
-              src='src/assets/logos/facebook.png'
-            />
-            <Box
-              component='img'
-              sx={imgStyle}
-              src='src/assets/logos/linkedin.png'
-            /> */}
             <Link
               target='_blank'
               to={'https://www.upwork.com/freelancers/fareedkamal'}
             >
-              <Box component='img' sx={imgStyle} src={upworkLogo} />
+              <Box
+                component='img'
+                sx={{ height: { sm: '40px', xs: '20px' } }}
+                src={upworkLogo}
+              />
             </Link>
           </Stack>
         </Stack>

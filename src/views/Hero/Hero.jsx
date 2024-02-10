@@ -20,8 +20,7 @@ const Hero = () => {
         width: '100%',
         bgcolor: styles.newPallette[0],
         position: 'relative',
-        pt: 10,
-        overflowX: { sm: 'unset', xs: 'hidden' },
+        pt: 5,
       }}
     >
       <Section>
@@ -42,8 +41,8 @@ const Hero = () => {
             <Typography
               mb={2}
               color={'white'}
-              fontWeight={900}
-              fontSize={styles.staticfontSize.xlg}
+              fontWeight={700}
+              fontSize={styles.fontSize.xlg}
             >
               Full Stack Dev /
               <br />
@@ -52,7 +51,7 @@ const Hero = () => {
             <Typography
               color={'grey'}
               fontWeight={600}
-              fontSize={styles.staticfontSize.lg}
+              fontSize={styles.fontSize.lg}
             >
               I like to craft solid and scalable software products with great
               user experiences.
@@ -61,7 +60,7 @@ const Hero = () => {
           <Box
             sx={{
               height: { sm: '400px', xs: '300px' },
-              width: { sm: '400px', xs: '300px' },
+              width: { sm: '400px', xs: 'auto' },
               position: 'relative',
               display: 'flex',
               alignItems: 'center',

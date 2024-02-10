@@ -32,12 +32,12 @@ const Message = () => {
           spacing={{ md: 10, xs: 5 }}
         >
           <Stack m={'auto'} textAlign={'center'} spacing={2}>
-            <Typography fontWeight={800} fontSize={styles.staticfontSize.lg}>
+            <Typography fontWeight={800} fontSize={styles.fontSize.lg}>
               Send me a message!
             </Typography>
             <Typography
               color={styles.newPallette[2]}
-              fontSize={styles.staticfontSize.md}
+              fontSize={styles.fontSize.md}
             >
               Got a question or proposal, or just want to say hello? Go ahead.
             </Typography>
@@ -48,7 +48,7 @@ const Message = () => {
             spacing={{ md: 15, xs: 5 }}
           >
             <Box flex={1}>
-              <Typography mb={3} fontSize={styles.staticfontSize.md}>
+              <Typography mb={3} fontSize={styles.fontSize.md}>
                 Your Name
               </Typography>
               <Input
@@ -58,12 +58,12 @@ const Message = () => {
                   pb: 1,
                   color: 'white',
                   borderBottom: '1px solid grey',
-                  fontSize: styles.staticfontSize.md,
+                  fontSize: styles.fontSize.md,
                 }}
               />
             </Box>
             <Box flex={1}>
-              <Typography mb={3} fontSize={styles.staticfontSize.md}>
+              <Typography mb={3} fontSize={styles.fontSize.md}>
                 Email Address
               </Typography>
               <Input
@@ -71,7 +71,7 @@ const Message = () => {
                 placeholder='Enter your email address'
                 sx={{
                   pb: 1,
-                  fontSize: styles.staticfontSize.md,
+                  fontSize: styles.fontSize.md,
                   color: 'white',
                   borderBottom: '1px solid grey',
                 }}
@@ -79,7 +79,7 @@ const Message = () => {
             </Box>
           </Stack>
           <Box>
-            <Typography mb={3} fontSize={styles.staticfontSize.md}>
+            <Typography mb={3} fontSize={styles.fontSize.md}>
               Your Message
             </Typography>
             <Input
@@ -88,7 +88,7 @@ const Message = () => {
               placeholder='Hi, I think we need a design system for our products at Company X. How soon can you hop on to discuss this?'
               sx={{
                 pb: 1,
-                fontSize: styles.staticfontSize.md,
+                fontSize: styles.fontSize.md,
                 color: 'white',
                 borderBottom: '1px solid grey',
               }}
@@ -113,7 +113,7 @@ const Message = () => {
                 p: 2,
                 flex: 0.5,
                 textAlign: 'center',
-                fontSize: styles.staticfontSize.md,
+                fontSize: styles.fontSize.md,
                 borderRadius: 10,
                 '&:hover': {
                   bgcolor: '#0027ff',
